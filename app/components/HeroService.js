@@ -18,12 +18,14 @@ let _sandbox = axios.create({
 
 let _state = {
   apiHeroes: [],
-  myHeroes: []
+  myHeroes: [],
+  activeHero: {}
 }
 
 let _subscribers = {
   apiHeroes: [],
-  myHeroes: []
+  myHeroes: [],
+  activeHero: {}
 }
 
 function _setState(propName, data) {
